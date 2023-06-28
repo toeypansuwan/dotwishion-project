@@ -246,7 +246,7 @@ sascsacsas
                             <div className="xl:hidden block peer">
                                 <img src="/image/icon/i-link.svg" alt="" />
                             </div>
-                            <div className="flex  h-full gap-7 xl:relative absolute  left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
+                            <div className="flex  gap-7 xl:relative absolute -top-6 h-full  left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
                                 <a href="" className="lg:block">
                                     <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-fb.svg" alt="" />
                                 </a>
