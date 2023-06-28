@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Line-Seed';
+    src: url('fb4fa8029c1915740fc80edcb3344dfd.woff2') format('woff2'),
+        url('fb4fa8029c1915740fc80edcb3344dfd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+@font-face {
+    font-family: 'Line-Seed';
+    src: url('fe1e40d2b9bb0e6cb85dabc25694372b.woff2') format('woff2'),
+        url('fe1e40d2b9bb0e6cb85dabc25694372b.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Line-Seed';
+    src: url('778d57c55af85f486dffbfb5af559e26.woff2') format('woff2'),
+        url('778d57c55af85f486dffbfb5af559e26.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Line-Seed';
+    src: url('b4a088846b19c2b4d1fd73e53745eb95.woff2') format('woff2'),
+        url('b4a088846b19c2b4d1fd73e53745eb95.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Line-Seed';
+    src: url('60659ff3e694ad9936506ea576db7fa3.woff2') format('woff2'),
+        url('60659ff3e694ad9936506ea576db7fa3.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
