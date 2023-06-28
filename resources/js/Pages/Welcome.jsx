@@ -240,7 +240,7 @@ export default function Welcome({}) {
                     <div className="">
                     <div className="absolute left-0 bottom-0 w-full md:p-10 p-3 flex justify-between items-end">
                         <div className="">
-s
+sascsacsas
                         </div>
                         <div className="relative">
                             <div className="xl:hidden block peer">
