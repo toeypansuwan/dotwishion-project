@@ -27,7 +27,7 @@ export default function Creator({}) {
                                     className="w-[47.0625rem] absolute bottom-0 left-2/4 z-10"
                                 />
                             </div>
-                            <h1 className="text-[11.25rem] absolute z-0 text-center text-stone-400/25 hyphens-none bottom-1 text-clip w-full">
+                            <h1 className="text-[11.25rem] absolute z-0 text-center text-stone-400/25 hyphens-none bottom-1 text-clip w-full stroke font-extrabold">
                                 TRUCK&shy;ROUNDING
                             </h1>
                         </div>
@@ -39,10 +39,7 @@ export default function Creator({}) {
                     </p>
                     <div className="flex gap-4 items-center">
                         <div className="w-1/2 ">
-                            <img
-                                src="/image/Groupcom.png"
-                                className="h-full"
-                            />
+                            <img src="/image/Groupcom.png" className="h-full" />
                         </div>
                         <div className="w-1/2">
                             <p className="mt-28 font-bold uppercase text-[2rem] text-indigo-950">
@@ -80,7 +77,7 @@ export default function Creator({}) {
                     </p>
                     <div className="flex flex-row gap-x-10 px-6 py-24">
                         <div className="basis-1/3">
-                            <h1 className="text-[8rem] font-bold bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
+                            <h1 className="text-[8rem] font-bold strokenumber">
                                 01
                             </h1>
                             <p className="text-[1.875rem] font-bold uppercase text-teal-600">
@@ -92,7 +89,7 @@ export default function Creator({}) {
                             </p>
                         </div>
                         <div className="basis-1/3">
-                            <h1 className="text-[8rem] font-bold bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
+                            <h1 className="text-[8rem] font-bold strokenumber">
                                 02
                             </h1>
                             <p className="text-[1.875rem] font-bold uppercase text-teal-600">
@@ -104,7 +101,7 @@ export default function Creator({}) {
                             </p>
                         </div>
                         <div className="basis-1/3">
-                            <p className="text-[8rem] font-bold bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
+                            <p className="text-[8rem] font-bold strokenumber">
                                 03
                             </p>
                             <p className="text-[1.875rem] font-bold uppercase text-teal-600">
@@ -143,7 +140,7 @@ export default function Creator({}) {
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullscreen
+                            allowFullScreen
                         ></iframe>
                     </div>
                     <div className="mx-auto">
@@ -171,7 +168,7 @@ export default function Creator({}) {
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullscreen
+                                        allowFullScreen
                                     ></iframe>
                                 </div>
                                 <p className="text-[2.5rem] font-bold capitalize mt-10">
@@ -187,7 +184,7 @@ export default function Creator({}) {
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowFullscreen
+                                        allowFullScreen
                                     ></iframe>
                                 </div>
                                 <p className="mr-20 text-[2.5rem] font-bold capitalize mt-10">
@@ -199,7 +196,7 @@ export default function Creator({}) {
                         <div className="w-full h-[0.0625rem] bg-black mx-auto mt-[5.12rem]"></div>
                     </div>
 
-                    <AboutMe data={{}}/>
+                    <AboutMe data={{}} />
                 </div>
                 {/* footer */}
             </MainLayout>

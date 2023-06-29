@@ -17,50 +17,50 @@ const MainLayout = ({ children }) => {
                         className="mx-auto w-[16.1875rem] mt-12"
                         src="/image/logo/cenwo.svg"
                     />
-                    <div class="flex flex-row mt-20 gap-4 items-center">
-                        <div class="grow">
+                    <div className="flex flex-row mt-20 gap-4 items-center">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/krung.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/duck.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/txp.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/merge.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/digito.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/extract.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/comeram.svg"
                             />
                         </div>
-                        <div class="grow">
+                        <div className="grow">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/modco.svg"

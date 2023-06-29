@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.stroke{
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #9F9F9F;
+  -webkit-text-fill-color: transparent;
+}
+
+.strokenumber{
+    background: -webkit-linear-gradient(153deg, rgba(1,13,79,1) 0%, rgba(43,108,204,1) 63%, rgba(50,164,172,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.4rem transparent;
+  color: white;
+  
+  }
