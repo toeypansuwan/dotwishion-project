@@ -37,11 +37,14 @@ export default function Creator({}) {
                     <p className="underline underline-offset-8 uppercase text-[2rem] text-center mt-24">
                         WEB Application
                     </p>
-                    <div className="flex gap-4 items-center">
-                        <div className="w-1/2 ">
-                            <img src="/image/Groupcom.png" className="h-full" />
+                    <div className="flex gap-4 items-center max-lg:flex-col ">
+                        <div className="w-1/2 max-lg:order-last max-lg:w-full ">
+                            <img
+                                src="/image/Groupcom.png"
+                                className="h-full "
+                            />
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-1/2 max-lg:w-full max-lg:text-center">
                             <p className="mt-28 font-bold uppercase text-[2rem] text-indigo-950">
                                 Animal Game
                             </p>
@@ -75,7 +78,7 @@ export default function Creator({}) {
                     <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950">
                         functions available on the website.
                     </p>
-                    <div className="flex flex-row gap-x-10 px-6 py-24">
+                    <div className="flex flex-row gap-x-10 px-6 py-24 max-lg:flex-col max-lg:gap-y-10">
                         <div className="basis-1/3">
                             <h1 className="text-[8rem] font-bold strokenumber">
                                 01
@@ -88,7 +91,7 @@ export default function Creator({}) {
                                 สินค้าและโปรโมชันในร้านได้
                             </p>
                         </div>
-                        <div className="basis-1/3">
+                        <div className="basis-1/3 max-lg:text-right">
                             <h1 className="text-[8rem] font-bold strokenumber">
                                 02
                             </h1>
@@ -132,7 +135,7 @@ export default function Creator({}) {
                     <p className="mt-32 text-center capitalize font-bold text-[6rem] mb-9">
                         Video
                     </p>
-                    <div className="h-[47.3125rem] bg-black mx-auto rounded-md">
+                    <div className="h-[47.3125rem] bg-black mx-auto rounded-md max-lg:h-[21.4375rem]">
                         <iframe
                             width="100%"
                             height="100%"
@@ -158,8 +161,8 @@ export default function Creator({}) {
                         </div>
                     </div>
                     <div className="mx-auto">
-                        <div className="flex gap-14 h-full mt-[5.25rem]">
-                            <div className="w-1/2">
+                        <div className="flex gap-14 h-full mt-[5.25rem] max-lg:flex-col">
+                            <div className="w-1/2 max-lg:w-full max-lg:text-center">
                                 <div className="h-[21.4375rem] bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
@@ -175,7 +178,7 @@ export default function Creator({}) {
                                     Demo
                                 </p>
                             </div>
-                            <div className="w-1/2">
+                            <div className="w-1/2 max-lg:w-full max-lg:text-center">
                                 <div className="h-[21.4375rem] bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
