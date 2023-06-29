@@ -1,45 +1,70 @@
 import React from "react";
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
     return (
         <>
-            <header>
-                
-            </header>
-            <main>
-                {children}
-            </main>
+            <header></header>
+            <main>{children}</main>
             <footer>
                 <div className="container mx-auto h-full mb-6">
+                    <p className="uppercase text-center mt-10">our sponsor</p>
                     <img
                         className="mx-auto w-[9.875rem] mt-12"
-                        src="/image/charmiss.png"
+                        src="/image/logo/charmiss.svg"
                     />
+
                     <img
                         className="mx-auto w-[16.1875rem] mt-12"
-                        src="/image/cenwo.png"
+                        src="/image/logo/cenwo.svg"
                     />
                     <div class="flex flex-row mt-20 gap-4 items-center">
-                        <div class="basis-1/12">
-                            <img className="mx-auto" src="/image/Asset-1.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/krung.svg"
+                            />
                         </div>
-                        <div class="basis-1/12">
-                            <img className="mx-auto" src="/image/Asset-2.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/duck.svg"
+                            />
                         </div>
-                        <div class="basis-2/12">
-                            <img className="mx-auto" src="/image/Asset-3.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/txp.svg"
+                            />
                         </div>
-                        <div class="basis-2/12">
-                            <img className="mx-auto" src="/image/Asset-4.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/merge.svg"
+                            />
                         </div>
-                        <div class="basis-2/12">
-                            <img className="mx-auto" src="/image/Asset-5.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/digito.svg"
+                            />
                         </div>
-                        <div class="basis-2/12">
-                            <img className="mx-auto" src="/image/Asset-6.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/extract.svg"
+                            />
                         </div>
-                        <div class="basis-2/12">
-                            <img className="mx-auto" src="/image/Asset-7.png" />
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/comeram.svg"
+                            />
+                        </div>
+                        <div class="grow">
+                            <img
+                                className="mx-auto"
+                                src="/image/logo/modco.svg"
+                            />
                         </div>
                     </div>
                 </div>
