@@ -240,13 +240,13 @@ export default function Welcome({}) {
                     <div className="">
                     <div className="absolute left-0 bottom-0 w-full md:p-10 p-3 flex justify-between items-end">
                         <div className="">
-sascsacsas
+                            jhvjhv
                         </div>
                         <div className="relative">
                             <div className="xl:hidden block peer">
                                 <img src="/image/icon/i-link.svg" alt="" />
                             </div>
-                            <div className="flex  gap-7 xl:relative absolute -top-6 h-full  left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
+                            <div className="flex  gap-7 xl:relative absolute xl:top-0 -top-6 peer-hover:h-auto h-0 xl:h-auto duration-200 xl:translate-y-0 -translate-y-full overflow-hidden left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
                                 <a href="" className="lg:block">
                                     <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-fb.svg" alt="" />
                                 </a>
