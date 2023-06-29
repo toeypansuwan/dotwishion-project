@@ -15,7 +15,7 @@ export default function Creator({}) {
                                 ฐิติวรรณ เฮงจำรัส
                             </h1>
                             <h1 className="text-[1.5rem] ml-20 mt-5">
-                                xxxxxxxx
+                                621310345
                             </h1>
                         </div>
                         <div className="w-1/2 ">
@@ -60,10 +60,10 @@ export default function Creator({}) {
                             Design & Development — Thanatron
                         </p>
                         <div className="flex mt-14">
-                            <div class="w-[6rem] h-[6rem]">
+                            <div className="w-[6rem] h-[6rem]">
                                 <img src="/image/htmlpic.png" />
                             </div>
-                            <div class="w-[6rem] h-[6rem]">
+                            <div className="w-[6rem] h-[6rem]">
                                 <img src="/image/htmlpic.png" />
                             </div>
                         </div>
@@ -88,7 +88,7 @@ export default function Creator({}) {
                             สินค้าและโปรโมชันในร้านได้
                         </p>
                     </div>
-                    <div className="basis-1/3  mr-6">
+                    <div className="basis-1/3  mr-6 ml-3">
                         <p className="text-[8rem] font-bold bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
                             02
                         </p>
@@ -100,7 +100,7 @@ export default function Creator({}) {
                             สินค้าและโปรโมชันในร้านได้
                         </p>
                     </div>
-                    <div className="basis-1/3">
+                    <div className="basis-1/3 ml-6">
                         <p className="text-[8rem] font-bold bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
                             03
                         </p>
@@ -137,9 +137,9 @@ export default function Creator({}) {
                         height="100%"
                         src="https://www.youtube.com/embed/xOAGH2gbhOA"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
+                        allowFullscreen
                     ></iframe>
                 </div>
                 <div className="mx-auto">
@@ -165,9 +165,9 @@ export default function Creator({}) {
                                     height="100%"
                                     src="https://www.youtube.com/embed/2jSVlBNpE_U"
                                     title="YouTube video player"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen
+                                    allowFullscreen
                                 ></iframe>
                             </div>
                             <p className="ml-20 text-[2.5rem] font-bold capitalize mt-10">
@@ -181,9 +181,9 @@ export default function Creator({}) {
                                     height="100%"
                                     src="https://www.youtube.com/embed/Z0QModZv_C8"
                                     title="YouTube video player"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen
+                                    allowFullscreen
                                 ></iframe>
                             </div>
                             <p className="ml-20 mr-20 text-[2.5rem] font-bold capitalize mt-10">
