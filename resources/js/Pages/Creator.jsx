@@ -7,7 +7,7 @@ export default function Creator({}) {
         <>
             <MainLayout>
                 <div className="h-screen bg-[url('/image/bg-creator.png')] bg-no-repeat bg-cover">
-                    <div className="container mx-auto px-3 h-full">
+                    <div className="container mx-auto px-4 h-full">
                         <div className="flex h-full relative  overflow-hidden">
                             <div className="w-1/2">
                                 <img
@@ -33,7 +33,7 @@ export default function Creator({}) {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto h-full">
+                <div className="container px-4 mx-auto h-full">
                     <p className="underline underline-offset-8 uppercase text-[2rem] text-center mt-24">
                         WEB Application
                     </p>
@@ -73,7 +73,7 @@ export default function Creator({}) {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto h-full">
+                <div className="container px-4 mx-auto h-full">
                     <p className="text-[2rem] mt-32">FUCTION</p>
                     <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950">
                         functions available on the website.
@@ -131,11 +131,11 @@ export default function Creator({}) {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto h-full">
+                <div className="container px-4 mx-auto h-full">
                     <p className="mt-32 text-center capitalize font-bold text-[6rem] mb-9">
                         Video
                     </p>
-                    <div className="h-[47.3125rem] bg-black mx-auto rounded-md max-lg:h-[21.4375rem]">
+                    <div className="aspect-video bg-black mx-auto rounded-md ">
                         <iframe
                             width="100%"
                             height="100%"
@@ -163,7 +163,7 @@ export default function Creator({}) {
                     <div className="mx-auto">
                         <div className="flex gap-14 h-full mt-[5.25rem] max-lg:flex-col">
                             <div className="w-1/2 max-lg:w-full max-lg:text-center">
-                                <div className="h-[21.4375rem] bg-black mx-auto rounded-md">
+                                <div className="aspect-video bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
                                         height="100%"
@@ -179,7 +179,7 @@ export default function Creator({}) {
                                 </p>
                             </div>
                             <div className="w-1/2 max-lg:w-full max-lg:text-center">
-                                <div className="h-[21.4375rem] bg-black mx-auto rounded-md">
+                                <div className="aspect-video bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
                                         height="100%"
