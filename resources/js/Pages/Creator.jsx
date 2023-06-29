@@ -45,10 +45,10 @@ export default function Creator({}) {
                             />
                         </div>
                         <div className="w-1/2 max-lg:w-full max-lg:text-center">
-                            <p className="mt-28 font-bold uppercase text-[2rem] text-indigo-950">
+                            <p className="mt-28 font-bold uppercase text-[2rem] text-indigo-950 max-sm:text-[1.75rem]">
                                 Animal Game
                             </p>
-                            <p className="mt-10 text-blue-400 text-[1.875rem]">
+                            <p className="mt-10 text-blue-400 text-[1.875rem] max-sm:text-[1.75rem]">
                                 Design and Development of Physical and Sexual
                                 Crimes Alert Application
                             </p>
@@ -62,11 +62,11 @@ export default function Creator({}) {
                             <p className="mt-7 font-extralight text-[1rem]">
                                 Design & Development — Thanatron
                             </p>
-                            <div className="flex mt-14">
-                                <div className="w-[6rem] h-[6rem]">
+                            <div className="flex mt-14 max-lg:place-content-center max-lg:gap-x-4">
+                                <div className="w-[6rem] h-[6rem] max-lg:w-auto">
                                     <img src="/image/htmlpic.png" />
                                 </div>
-                                <div className="w-[6rem] h-[6rem]">
+                                <div className="w-[6rem] h-[6rem] max-lg:w-auto">
                                     <img src="/image/htmlpic.png" />
                                 </div>
                             </div>
@@ -74,8 +74,10 @@ export default function Creator({}) {
                     </div>
                 </div>
                 <div className="container px-4 mx-auto h-full">
-                    <p className="text-[2rem] mt-32">FUCTION</p>
-                    <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950">
+                    <p className="text-[2rem] mt-32 max-sm:invisible">
+                        FUCTION
+                    </p>
+                    <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950 max-sm:text-[2rem]">
                         functions available on the website.
                     </p>
                     <div className="flex flex-row gap-x-10 px-6 py-24 max-lg:flex-col max-lg:gap-y-10">
@@ -122,7 +124,7 @@ export default function Creator({}) {
                             <hr />
                         </div>
                         <div className="grow-0">
-                            <p className="uppercase text-[2.25rem] text-center">
+                            <p className="uppercase text-[2.25rem] text-center max-sm:text-[1rem]">
                                 advisor — KACHORNPON Hiranchotepaisan
                             </p>
                         </div>
@@ -132,7 +134,7 @@ export default function Creator({}) {
                     </div>
                 </div>
                 <div className="container px-4 mx-auto h-full">
-                    <p className="mt-32 text-center capitalize font-bold text-[6rem] mb-9">
+                    <p className="mt-32 text-center capitalize font-bold text-[6rem] mb-9 max-sm:text-[4rem]">
                         Video
                     </p>
                     <div className="aspect-video bg-black mx-auto rounded-md ">
@@ -147,22 +149,22 @@ export default function Creator({}) {
                         ></iframe>
                     </div>
                     <div className="mx-auto">
-                        <div className="flex h-full mt-9">
-                            <div className="w-1/2">
-                                <p className="text-[2.5rem] font-bold capitalize">
+                        <div className="flex h-full mt-9 max-sm:flex-col">
+                            <div className="w-1/2 max-sm:w-full">
+                                <p className="text-[2.5rem] font-bold capitalize max-sm:text-center max-sm:text-[1.5rem]">
                                     Showreel
                                 </p>
                             </div>
-                            <div className="w-1/2">
-                                <p className="text-right ml-auto text-[2.5rem] font-bold capitalize">
+                            <div className="w-1/2 max-sm:w-full">
+                                <p className="text-right ml-auto text-[2.5rem] font-bold capitalize max-sm:invisible max-sm:text-[0rem]">
                                     Thanatron (2023)
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="mx-auto">
-                        <div className="flex gap-14 h-full mt-[5.25rem] max-lg:flex-col">
-                            <div className="w-1/2 max-lg:w-full max-lg:text-center">
+                        <div className="flex gap-14 h-full mt-[5.25rem] max-sm:flex-col">
+                            <div className="w-1/2 max-sm:w-full max-lg:text-center">
                                 <div className="aspect-video bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
@@ -174,11 +176,11 @@ export default function Creator({}) {
                                         allowFullScreen
                                     ></iframe>
                                 </div>
-                                <p className="text-[2.5rem] font-bold capitalize mt-10">
+                                <p className="text-[2.5rem] font-bold capitalize mt-10 max-sm:text-[1.5rem]">
                                     Demo
                                 </p>
                             </div>
-                            <div className="w-1/2 max-lg:w-full max-lg:text-center">
+                            <div className="w-1/2 max-sm:w-full max-sm:text-center">
                                 <div className="aspect-video bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
@@ -190,7 +192,7 @@ export default function Creator({}) {
                                         allowFullScreen
                                     ></iframe>
                                 </div>
-                                <p className="mr-20 text-[2.5rem] font-bold capitalize mt-10">
+                                <p className="mr-20 text-[2.5rem] font-bold capitalize mt-10 max-lg:mr-0 max-sm:text-[1.5rem]">
                                     Other
                                 </p>
                             </div>

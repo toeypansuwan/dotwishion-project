@@ -17,7 +17,7 @@ const MainLayout = ({ children }) => {
                         className="mx-auto w-[16.1875rem] mt-12"
                         src="/image/logo/cenwo.svg"
                     />
-                    <div className="flex flex-row mt-20 gap-4 items-center">
+                    <div className="flex flex-row mt-20 gap-4 items-center max-sm:grid-cols-3 max-sm:grid">
                         <div className="grow">
                             <img
                                 className="mx-auto"
@@ -60,7 +60,7 @@ const MainLayout = ({ children }) => {
                                 src="/image/logo/comeram.svg"
                             />
                         </div>
-                        <div className="grow">
+                        <div className="grow max-sm:col-span-full">
                             <img
                                 className="mx-auto"
                                 src="/image/logo/modco.svg"
