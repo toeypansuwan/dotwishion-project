@@ -9,26 +9,26 @@ export default function Creator({}) {
             <MainLayout>
                 <div className="h-screen bg-[url('/image/bg-creator.png')] bg-no-repeat bg-cover">
                     <div className="container mx-auto px-4 h-full">
-                        <div className="flex h-full relative  overflow-hidden">
-                            <div className="w-1/2">
+                        <div className="flex h-full relative  overflow-hidden max-sm:flex-col ">
+                            <div className="w-1/2 max-sm:w-full max-sm:grid max-sm:grid-rows-3 max-sm:grid-flow-col">
                                 <img
-                                    className="w-[9.8125rem] h-[9.8125rem] mt-20 ml-20"
+                                    className="w-[9.8125rem] h-[9.8125rem] mt-20 ml-20 max-lg:ml-4 max-sm:ml-0 max-sm:w-[5rem] max-sm:h-[5rem] max-sm:row-span-3"
                                     src="/image/circle.png"
                                 />
-                                <h1 className="font-bold text-[6rem] w-[22.8125rem] leading-[6rem] ml-20 mt-10 bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent">
+                                <h1 className="font-bold max-sm:col-span-2 max-sm:text-[2.5rem] max-sm:text-right max-sm:mt-20 max-sm:w-auto max-sm:leading-10 text-[6rem] w-[22.8125rem] leading-[6rem] ml-20 max-lg:ml-4 max-lg:mt-4 mt-10 bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent max-lg:text-[4rem] max-lg:w-[16rem]">
                                     ฐิติวรรณ เฮงจำรัส
                                 </h1>
-                                <h1 className="text-[1.5rem] ml-20 mt-5">
+                                <h1 className="text-[1.5rem] ml-20 mt-5 max-sm:mt-2 max-lg:ml-4 max-sm:row-span-2 max-sm:col-span-2 max-sm:text-[1.5rem] max-sm:text-right">
                                     621310345
                                 </h1>
                             </div>
-                            <div className="w-1/2 ">
+                            <div className="w-1/2 max-sm:w-full">
                                 <img
                                     src="/image/aommy.png"
-                                    className="w-[47.0625rem] absolute bottom-0 left-2/4 z-10"
+                                    className="w-[47.0625rem] absolute bottom-0 left-2/4 z-10 max-lg:left-40 max-sm:left-0 "
                                 />
                             </div>
-                            <h1 className="text-[11.25rem] absolute z-0 text-center text-stone-400/25 hyphens-none bottom-1 text-clip w-full stroke font-extrabold">
+                            <h1 className="text-[11.25rem] max-sm:text-[3.8rem] max-sm:bottom-60 max-sm:hyphens-auto absolute z-0 text-center max-lg:text-left text-stone-400/25 hyphens-none max-lg:bottom-20 bottom-1 max-lg:hyphens-auto text-clip w-full stroke font-extrabold max-lg:text-[8rem] max-lg:w-[48rem] max-sm:w-[24rem]">
                                 TRUCK&shy;ROUNDING
                             </h1>
                         </div>
@@ -75,9 +75,7 @@ export default function Creator({}) {
                     </div>
                 </div>
                 <div className="container px-4 mx-auto h-full">
-                    <p className="text-[2rem] max-sm:hidden">
-                        FUCTION
-                    </p>
+                    <p className="text-[2rem] max-sm:hidden">FUCTION</p>
                     <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950 max-sm:text-[2rem]">
                         functions available on the website.
                     </p>
@@ -204,7 +202,7 @@ export default function Creator({}) {
 
                     <AboutMe data={{}} />
                 </div>
-                <OtherProject data={{}}/>
+                <OtherProject data={{}} />
                 {/* footer */}
             </MainLayout>
         </>
