@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
     return (
-        <div className="">
+        <>
             <div className="relative my-32 max-w-[38rem] mx-auto">
                 <div className=" absolute lg:-top-12 md:-top-20 -top-10 lg:-left-36 md:-left-16 -z-10">
                     <h1 className="md:text-[8rem] text-[4rem] font-bold stroke uppercase">
@@ -31,7 +31,7 @@ const AboutMe = () => {
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>
-                    <div className="border-2 p-5 md:w-[24.5rem] md:h-[21rem] w-[14.1rem] rounded-full">
+                    <div className="border-2 p-5 md:w-[24.5rem] md:h-[36.5rem] w-[14.1rem] h-[21] rounded-full">
                         <img
                             className="w-full h-full object-cover rounded-full"
                             src="/image/photo.png"
@@ -90,11 +90,8 @@ const AboutMe = () => {
                     </a>
                 </div>
             </div>
-            <div className="relative py-5 bg-gradient-to-t from-indigo-900 to-blue-600">
-                <h1>Other PROJECT</h1>
-
-            </div>
-        </div>
+            
+        </>
     );
 };
 

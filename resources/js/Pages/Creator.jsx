@@ -1,4 +1,5 @@
 import AboutMe from "@/Components/AboutMe";
+import OtherProject from "@/Components/OtherProject";
 import MainLayout from "@/Layouts/MainLayout";
 import { Head } from "@inertiajs/react";
 
@@ -33,7 +34,7 @@ export default function Creator({}) {
                         </div>
                     </div>
                 </div>
-                <div className="container px-4 mx-auto h-full">
+                <div className="container px-4 mx-auto h-full mb-32">
                     <p className="underline underline-offset-8 uppercase text-[2rem] text-center mt-24">
                         WEB Application
                     </p>
@@ -74,13 +75,13 @@ export default function Creator({}) {
                     </div>
                 </div>
                 <div className="container px-4 mx-auto h-full">
-                    <p className="text-[2rem] mt-32 max-sm:invisible">
+                    <p className="text-[2rem] max-sm:hidden">
                         FUCTION
                     </p>
                     <p className="text-[3rem] max-w-[41.1875rem] capitalize font-bold text-indigo-950 max-sm:text-[2rem]">
                         functions available on the website.
                     </p>
-                    <div className="flex flex-row gap-x-10 px-6 py-24 max-lg:flex-col max-lg:gap-y-10">
+                    <div className="flex flex-row gap-x-10 md:px-6 md:py-24 py-16 max-lg:flex-col max-lg:gap-y-10">
                         <div className="basis-1/3">
                             <h1 className="text-[8rem] font-bold strokenumber">
                                 01
@@ -156,7 +157,7 @@ export default function Creator({}) {
                                 </p>
                             </div>
                             <div className="w-1/2 max-sm:w-full">
-                                <p className="text-right ml-auto text-[2.5rem] font-bold capitalize max-sm:invisible max-sm:text-[0rem]">
+                                <p className="text-right ml-auto text-[2.5rem] font-bold capitalize max-sm:hidden max-sm:text-[0rem]">
                                     Thanatron (2023)
                                 </p>
                             </div>
@@ -203,6 +204,7 @@ export default function Creator({}) {
 
                     <AboutMe data={{}} />
                 </div>
+                <OtherProject data={{}}/>
                 {/* footer */}
             </MainLayout>
         </>
