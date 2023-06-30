@@ -19,16 +19,16 @@ const AboutMe = () => {
                         <a
                             href=""
                             target="_blank"
-                            class="flex justify-center items-center text-4xl text-white rounded-tl-full rounded-tr-full rounded-br-0 rounded-bl-full bg-gradient-to-b from-blue-600 to-indigo-900 w-24 h-24"
+                            className="flex justify-center items-center text-4xl text-white rounded-tl-full rounded-tr-full rounded-br-0 rounded-bl-full bg-gradient-to-b from-blue-600 to-indigo-900 w-24 h-24"
                         >
-                            <i class="fa-regular fa-envelope"></i>
+                            <i className="fa-regular fa-envelope"></i>
                         </a>
                         <a
                             href=""
                             target="_blank"
-                            class="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-24 h-24"
+                            className="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-24 h-24"
                         >
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
                         </a>
                     </div>
                     <div className="border-2 p-5 md:w-[24.5rem] md:h-[36.5rem] w-[14.1rem] h-[21] rounded-full">
@@ -42,16 +42,16 @@ const AboutMe = () => {
                         <a
                             href=""
                             target="_blank"
-                            class="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-24 h-24"
+                            className="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-24 h-24"
                         >
-                            <i class="fa-regular fa-user"></i>
+                            <i className="fa-regular fa-user"></i>
                         </a>
                         <a
                             href=""
                             target="_blank"
-                            class="flex justify-center items-center text-4xl text-white  rounded-tl-0 rounded-tr-full rounded-br-full rounded-bl-full bg-gradient-to-b from-indigo-900 to-blue-600 w-24 h-24"
+                            className="flex justify-center items-center text-4xl text-white  rounded-tl-0 rounded-tr-full rounded-br-full rounded-bl-full bg-gradient-to-b from-indigo-900 to-blue-600 w-24 h-24"
                         >
-                            <i class="fa-regular fa-address-card"></i>
+                            <i className="fa-regular fa-address-card"></i>
                         </a>
                     </div>
                 </div>
@@ -63,30 +63,30 @@ const AboutMe = () => {
                     <a
                         href=""
                         target="_blank"
-                        class="flex justify-center items-center text-4xl text-white rounded-tl-full rounded-tr-full rounded-br-0 rounded-bl-full bg-gradient-to-b from-blue-600 to-indigo-900 w-16 h-16"
+                        className="flex justify-center items-center text-4xl text-white rounded-tl-full rounded-tr-full rounded-br-0 rounded-bl-full bg-gradient-to-b from-blue-600 to-indigo-900 w-16 h-16"
                     >
-                        <i class="fa-regular fa-envelope"></i>
+                        <i className="fa-regular fa-envelope"></i>
                     </a>
                     <a
                         href=""
                         target="_blank"
-                        class="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-16 h-16"
+                        className="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-16 h-16"
                     >
-                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i className="fa-brands fa-linkedin-in"></i>
                     </a>
                     <a
                         href=""
                         target="_blank"
-                        class="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-16 h-16"
+                        className="flex justify-center items-center text-4xl text-white rounded-full bg-[#010D4F] w-16 h-16"
                     >
-                        <i class="fa-regular fa-user"></i>
+                        <i className="fa-regular fa-user"></i>
                     </a>
                     <a
                         href=""
                         target="_blank"
-                        class="flex justify-center items-center text-4xl text-white  rounded-tl-0 rounded-tr-full rounded-br-full rounded-bl-full bg-gradient-to-b from-indigo-900 to-blue-600 w-16 h-16"
+                        className="flex justify-center items-center text-4xl text-white  rounded-tl-0 rounded-tr-full rounded-br-full rounded-bl-full bg-gradient-to-b from-indigo-900 to-blue-600 w-16 h-16"
                     >
-                        <i class="fa-regular fa-address-card"></i>
+                        <i className="fa-regular fa-address-card"></i>
                     </a>
                 </div>
             </div>

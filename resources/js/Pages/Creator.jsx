@@ -8,29 +8,35 @@ export default function Creator({}) {
         <>
             <MainLayout>
                 <div className="h-screen bg-[url('/image/bg-creator.png')] bg-no-repeat bg-cover">
-                    <div className="container mx-auto px-4 h-full">
-                        <div className="flex h-full relative  overflow-hidden max-sm:flex-col ">
-                            <div className="w-1/2 max-sm:w-full max-sm:grid max-sm:grid-rows-3 max-sm:grid-flow-col">
-                                <img
-                                    className="w-[9.8125rem] h-[9.8125rem] mt-20 ml-20 max-lg:ml-4 max-sm:ml-0 max-sm:w-[5rem] max-sm:h-[5rem] max-sm:row-span-3"
-                                    src="/image/circle.png"
-                                />
-                                <h1 className="font-bold max-sm:col-span-2 max-sm:text-[2.5rem] max-sm:text-right max-sm:mt-20 max-sm:w-auto max-sm:leading-10 text-[6rem] w-[22.8125rem] leading-[6rem] ml-20 max-lg:ml-4 max-lg:mt-4 mt-10 bg-gradient-to-r from-indigo-950 to-sky-400 bg-clip-text text-transparent max-lg:text-[4rem] max-lg:w-[16rem]">
-                                    ฐิติวรรณ เฮงจำรัส
-                                </h1>
-                                <h1 className="text-[1.5rem] ml-20 mt-5 max-sm:mt-2 max-lg:ml-4 max-sm:row-span-2 max-sm:col-span-2 max-sm:text-[1.5rem] max-sm:text-right">
-                                    621310345
-                                </h1>
-                            </div>
-                            <div className="w-1/2 max-sm:w-full">
-                                <img
-                                    src="/image/aommy.png"
-                                    className="w-[47.0625rem] absolute bottom-0 left-2/4 z-10 max-lg:left-40 max-sm:left-0 "
-                                />
-                            </div>
-                            <h1 className="text-[11.25rem] max-sm:text-[3.8rem] max-sm:bottom-60 max-sm:hyphens-auto absolute z-0 text-center max-lg:text-left text-stone-400/25 hyphens-none max-lg:bottom-20 bottom-1 max-lg:hyphens-auto text-clip w-full stroke font-extrabold max-lg:text-[8rem] max-lg:w-[48rem] max-sm:w-[24rem]">
+                    <div className="container mx-auto md:px-20 px-6 h-full overflow-hidden relative">
+                        <div className=" absolute xl:bottom-2 lg:bottom-[20%] bottom-[25%] md:left-16 left-2">
+                            <h1 className="stroke xl:text-center xl:text-[8rem] lg:text-[10rem] text-[5rem] font-bold leading-none">
                                 TRUCK&shy;ROUNDING
                             </h1>
+                        </div>
+                        <div className="flex h-full flex-wrap">
+                            <div className="md:w-1/2  w-full lg:mt-12 md:mt-24 mt-3">
+                                <div className="flex md:block items-center md:mt-0 mt-10 justify-between">
+                                    <img
+                                        className="md:w-26 md:h-26 w-20 h-20 md:mb-4"
+                                        src="/image/circle.png"
+                                    />
+                                    <div className="">
+                                        <h1 className="font-bold lg:text-[6rem] md:text-[4rem] text-[2.75rem] leading-tight mb-4">
+                                            ฐิติวรรณ<br/>เฮงจำรัส
+                                        </h1>
+                                        <h1 className="md:text-[1.75rem] text-[1.5rem]">
+                                            621310345
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="md:w-1/2 w-full">
+                                <img
+                                    src="/image/aommy.png"
+                                    className="absolute max-w-[80rem] xl:w-[40rem] lg:w-[80rem] md:w-[50rem] w-[35rem] bottom-0 xl:left-3/4 lg:left-[62%] md:left-[65%] left-1/2 -translate-x-1/2"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
