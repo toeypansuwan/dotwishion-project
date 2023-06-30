@@ -61,7 +61,7 @@ const AboutMe = () => {
                 </p>
                 <div className="flex gap-3 justify-between md:hidden">
                     <a
-                        href=""
+                        href="mailto:toey-123@gmail.com"
                         target="_blank"
                         className="flex justify-center items-center text-4xl text-white rounded-tl-full rounded-tr-full rounded-br-0 rounded-bl-full bg-gradient-to-b from-blue-600 to-indigo-900 w-16 h-16"
                     >

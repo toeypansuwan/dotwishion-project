@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Students;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
@@ -37,7 +38,9 @@ class Project extends Controller
     public function show(string $id)
     {
         //
-        return Inertia::render('Creator', []);
+        $student = Students::where('student_id', $id)->first();
+        $projects = Students::where('student_id', '!=', $id)->inRandomOrder()->select('id', 'student_id', 'full_name_en', 'project_nickname_en', 'img_projecticon', 'img_projectpng')->get();
+        return Inertia::render('Creator', compact('student', 'projects'));
     }
 
     /**

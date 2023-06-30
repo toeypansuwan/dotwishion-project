@@ -3,39 +3,34 @@ import OtherProject from "@/Components/OtherProject";
 import MainLayout from "@/Layouts/MainLayout";
 import { Head } from "@inertiajs/react";
 
-export default function Creator({}) {
+export default function Creator({projects,student}) {
     return (
         <>
+        <Head title={`โปรเจ็ค ${student.project_nickname_th} - โดย ${student.full_name_th} ${student.sur_name_th}`}/>
             <MainLayout>
-                <div className="h-screen bg-[url('/image/bg-creator.png')] bg-no-repeat bg-cover">
-                    <div className="container mx-auto md:px-20 px-6 h-full overflow-hidden relative">
-                        <div className=" absolute xl:bottom-2 lg:bottom-[20%] bottom-[25%] md:left-16 left-2">
-                            <h1 className="stroke xl:text-center xl:text-[8rem] lg:text-[10rem] text-[5rem] font-bold leading-none">
-                                TRUCK&shy;ROUNDING
-                            </h1>
-                        </div>
-                        <div className="flex h-full flex-wrap">
-                            <div className="md:w-1/2  w-full lg:mt-12 md:mt-24 mt-3">
-                                <div className="flex md:block items-center md:mt-0 mt-10 justify-between">
+                <div className={`h-screen bg-[url('http://127.0.0.1:8000/image/img_aboutme/${student.img_aboutme}')] bg-no-repeat bg-cover bg-center`}>
+                    <div className="container mx-auto lg:px-20 px-6 h-full overflow-hidden relative py-4">
+                        <div className="flex h-full flex-col justify-between">
+                            <div className="lg:mt-6 md:mt-16 mt-3">
+                                <div className="flex flex-col justify-between md:mt-0 mt-10">
+                                    <div className="">
                                     <img
-                                        className="md:w-26 md:h-26 w-20 h-20 md:mb-4"
+                                        className="lg:w-26 lg:h-26 md:w-32 md:h-32  w-20 h-20 mb-4 rounded-full object-cover text-white drop-shadow-lg"
                                         src="/image/circle.png"
                                     />
+                                    </div>
                                     <div className="">
-                                        <h1 className="font-bold lg:text-[6rem] md:text-[4rem] text-[2.75rem] leading-tight mb-4">
-                                            ฐิติวรรณ<br/>เฮงจำรัส
+                                        <h1 className="font-bold lg:text-[5rem] text-white drop-shadow-lg md:text-[2.5rem] text-[2.5rem] leading-tight">
+                                             CALL COFF
                                         </h1>
-                                        <h1 className="md:text-[1.75rem] text-[1.5rem]">
+                                        <h1 className="md:text-[3rem] text-white drop-shadow-lg text-[1.5rem] font-thin">
                                             621310345
                                         </h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="md:w-1/2 w-full">
-                                <img
-                                    src="/image/aommy.png"
-                                    className="absolute max-w-[80rem] xl:w-[40rem] lg:w-[80rem] md:w-[50rem] w-[35rem] bottom-0 xl:left-3/4 lg:left-[62%] md:left-[65%] left-1/2 -translate-x-1/2"
-                                />
+                            <div className="">
+                                <h1 className="font-bold lg:text-[8rem] md:text-[7rem] text-[4rem] stroke leading-none">CALL COFF</h1>
                             </div>
                         </div>
                     </div>
