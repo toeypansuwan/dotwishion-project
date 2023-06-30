@@ -66,9 +66,9 @@ export default function Welcome({}) {
         },
     };
     const align = {
-        0:'right',
-        1:'left'
-    }
+        0: "right",
+        1: "left",
+    };
 
     const countDown = () => {
         const now = new Date().getTime();
@@ -111,7 +111,9 @@ export default function Welcome({}) {
                     numberElement.childNodes[1].style.backgroundImage = `url('${imageUrl.url}')`;
                 }
             }
-            numberElement.childNodes[i].className = `w-1/2 inline-block h-full bg-[length:${imageUrl.base}] md:bg-contain bg-no-repeat bg-${align[i]}`
+            numberElement.childNodes[
+                i
+            ].className = `w-1/2 inline-block h-full bg-[length:${imageUrl.base}] md:bg-contain bg-no-repeat bg-${align[i]}`;
 
             imageNumber += digit;
         }
@@ -238,39 +240,130 @@ export default function Welcome({}) {
                         </div>
                     </div>
                     <div className="">
-                    <div className="absolute left-0 bottom-0 w-full md:p-10 p-3 flex justify-between items-end">
-                        <div className="">
-                            jhvjhv
-                        </div>
-                        <div className="relative">
-                            <div className="xl:hidden block peer">
-                                <img src="/image/icon/i-link.svg" alt="" />
+                        <div className="absolute left-0 bottom-0 w-full md:p-10 p-3 flex justify-between items-end">
+                            <div className="">
+                                <div className="">
+                                    <a href="">
+                                        <img
+                                            src="/image/logow/logo_charmiss.svg"
+                                            className="mb-[1.5rem] max-sm:w-[30%]"
+                                        />
+                                    </a>
+                                    <a href="">
+                                        <img
+                                            src="/image/logow/logo_centralworld.svg"
+                                            className="mb-[1.5rem] max-sm:w-[40%]"
+                                        />
+                                    </a>
+                                    <div className="flex gap-x-10 max-lg:grid max-lg:grid-cols-4 max-lg:gap-x-5 max-lg:gap-y-5 max-sm:w-[70%] max-sm:gap-x-4 max-sm:gap-y-3">
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_krungsri.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_ducklab.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_txp.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_merge.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_digitopolis.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_extract.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_comeraam.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                        <a href="" className="grow">
+                                            <img
+                                                src="/image/logow/logo_modco.svg"
+                                                className=""
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="flex  gap-7 xl:relative absolute xl:top-0 -top-6 peer-hover:h-auto h-0 xl:h-auto duration-200 xl:translate-y-0 -translate-y-full overflow-hidden left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
-                                <a href="" className="lg:block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-fb.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-ig.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-tw.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-y.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-me.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-p.svg" alt="" />
-                                </a>
-                                <a href="" className="block">
-                                    <img className="xl:h-7 xl:w-7 md:w-[80%] mx-auto" src="/image/icon/i-tk.svg" alt="" />
-                                </a>
+                            <div className="relative">
+                                <div className="xl:hidden block peer">
+                                    <img src="/image/icon/i-link.svg" alt="" />
+                                </div>
+                                <div className="flex  gap-7 xl:relative absolute xl:top-0 -top-6 peer-hover:h-auto h-0 xl:h-auto duration-200 xl:translate-y-0 -translate-y-full overflow-hidden left-1/2 -translate-x-1/2 w-full  xl:bg-transparent flex-col xl:flex-row">
+                                    <a href="" className="lg:block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-fb.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-ig.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-tw.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-y.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-me.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-p.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a href="" className="block">
+                                        <img
+                                            className="xl:h-7 xl:w-7 md:w-[80%] mx-auto"
+                                            src="/image/icon/i-tk.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
