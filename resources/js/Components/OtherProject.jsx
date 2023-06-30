@@ -1,10 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from '@inertiajs/react';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-const OtherProject = () => {
+const OtherProject = ({ziggy,projects}) => {
     return (
         <>
             <div className="relative py-16 bg-gradient-to-t from-indigo-900 to-blue-600">
@@ -40,132 +41,26 @@ const OtherProject = () => {
                     // }}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square  object-cover rounded-full" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square object-cover" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square rounded-full" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="">
-                            <div className="w-full aspect-square bg-[url('/image/model.png')] bg-cover bg-center bg-no-repeat rounded-xl mb-3 "></div>
-                            <div className=" grid grid-cols-4 gap-4">
-                                <div className=" col-span-1">
-                                    <img src="/image/circle.png" className="w-full aspect-square rounded-full" alt="" />
-                                </div>
-                                <div className="col-span-3">
-                                <h2 className="text-white text-[1.5rem] uppercase">
-                                    Animal Game
-                                </h2>
-                                <p className="text-white text-[0.9rem] uppercase font-thin">
-                                    Design & Development — Thanatron
-                                </p>
-                                </div>
-                            </div>
-                        </a>
-                    </SwiperSlide>
+                   {projects.map(project=>{
+                     return <SwiperSlide key={project.student_id}>
+                     <Link href={route('projects.show',project.student_id)}>
+                         <div className={`w-full aspect-square  bg-cover bg-center bg-no-repeat rounded-xl mb-3 `} style={{backgroundImage:`url(${ziggy.url}/image/img_aboutme/${project.img_aboutme})`}}></div>
+                         <div className=" grid grid-cols-4 gap-4">
+                             <div className=" col-span-1">
+                                 <img src={`/image/img_projecticon/${project.img_projecticon}`} className="w-full aspect-square  object-cover rounded-full" alt="" />
+                             </div>
+                             <div className="col-span-3">
+                             <h2 className="text-white text-[1.5rem] uppercase">
+                                 Animal Game
+                             </h2>
+                             <p className="text-white text-[0.9rem] uppercase font-thin">
+                                 Design & Development — Thanatron
+                             </p>
+                             </div>
+                         </div>
+                     </Link>
+                 </SwiperSlide>
+                   })}
                 </Swiper>
             </div>
         </>

@@ -3,12 +3,20 @@ import OtherProject from "@/Components/OtherProject";
 import MainLayout from "@/Layouts/MainLayout";
 import { Head } from "@inertiajs/react";
 
-export default function Creator({projects,student}) {
+export default function Creator({projects,student,ziggy}) {
+    const splitAndFormartTrim=(text)=>{
+        const values = text.split(",").map((item) => item.trim());
+        return values;
+    }
+    const convertToEmbeddedUrl = (youtubeUrl)=>{
+        const embeddedUrl = youtubeUrl.replace("youtu.be", "www.youtube.com/embed");
+        return embeddedUrl;
+    }
     return (
         <>
         <Head title={`โปรเจ็ค ${student.project_nickname_th} - โดย ${student.full_name_th} ${student.sur_name_th}`}/>
             <MainLayout>
-                <div className={`h-screen bg-[url('http://127.0.0.1:8000/image/img_aboutme/${student.img_aboutme}')] bg-no-repeat bg-cover bg-center`}>
+                <div className={`h-screen bg-no-repeat bg-cover bg-center border-b-2`} style={{backgroundImage:`url(${ziggy.url}/image/img_aboutme/${student.img_aboutme})`}}>
                     <div className="container mx-auto lg:px-20 px-6 h-full overflow-hidden relative py-4">
                         <div className="flex h-full flex-col justify-between">
                             <div className="lg:mt-6 md:mt-16 mt-3">
@@ -16,61 +24,53 @@ export default function Creator({projects,student}) {
                                     <div className="">
                                     <img
                                         className="lg:w-26 lg:h-26 md:w-32 md:h-32  w-20 h-20 mb-4 rounded-full object-cover text-white drop-shadow-lg"
-                                        src="/image/circle.png"
+                                        src={`/image/img_projecticon/${student.img_projecticon}`}
                                     />
                                     </div>
                                     <div className="">
-                                        <h1 className="font-bold lg:text-[5rem] text-white drop-shadow-lg md:text-[2.5rem] text-[2.5rem] leading-tight">
-                                             CALL COFF
+                                        <h1 className="font-bold lg:text-[5rem] text-white drop-shadow-lg md:text-[2.5rem] text-[2.5rem] leading-tight uppercase">
+                                        {student.project_nickname_en} 
                                         </h1>
                                         <h1 className="md:text-[3rem] text-white drop-shadow-lg text-[1.5rem] font-thin">
-                                            621310345
+                                            {student.student_id} 
                                         </h1>
                                     </div>
                                 </div>
                             </div>
                             <div className="">
-                                <h1 className="font-bold lg:text-[8rem] md:text-[7rem] text-[4rem] stroke leading-none">CALL COFF</h1>
+                                <h1 className="font-bold lg:text-[8rem] md:text-[7rem] text-[4rem] stroke leading-none uppercase">{student.project_nickname_en} </h1>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="container px-4 mx-auto h-full mb-32">
-                    <p className="underline underline-offset-8 uppercase text-[2rem] text-center mt-24">
-                        WEB Application
+                    <p className="underline underline-offset-8 uppercase text-[2rem] text-center mt-24 mb-12">
+                    {student.project_type} 
                     </p>
-                    <div className="flex gap-4 items-center max-lg:flex-col ">
-                        <div className="w-1/2 max-lg:order-last max-lg:w-full ">
+                    <div className="flex gap-4 max-lg:flex-col ">
+                        <div className="w-1/2 max-lg:order-last max-lg:w-full h-full lg:h-[30rem]">
                             <img
-                                src="/image/Groupcom.png"
-                                className="h-full "
+                                src={`/image/img_projectpng/${student.img_projectpng}`}
+                                className="h-full w-full object-contain mx-auto"
                             />
                         </div>
                         <div className="w-1/2 max-lg:w-full max-lg:text-center">
-                            <p className="mt-28 font-bold uppercase text-[2rem] text-indigo-950 max-sm:text-[1.75rem]">
-                                Animal Game
+                            <p className=" font-bold uppercase text-[2rem] text-indigo-950 max-sm:text-[1.75rem]">
+                            {student.project_nickname_en} 
                             </p>
                             <p className="mt-10 text-blue-400 text-[1.875rem] max-sm:text-[1.75rem]">
-                                Design and Development of Physical and Sexual
-                                Crimes Alert Application
+                            {student.project_name_en} 
                             </p>
                             <p className="font-extralight text-[1.875rem]">
-                                แอปพลิเคชั่นที่คุณสามารถค้นหาสินค้า
-                                หรือโปรโมชั่นที่ใกล้เคียง และสามารถรับโปรโมชั่น
-                                ที่คุณต้องการผ่านระบบ QR CODE
-                                เพื่อนำไปรับโปรโมชั่นที่ ร้านค้าที่ต้องการได้
-                                เพื่ออำนวยสะดวกสบายให้คุณ
+                                {student.project_details}
                             </p>
                             <p className="mt-7 font-extralight text-[1rem]">
-                                Design & Development — Thanatron
+                                Design & Development — {student.full_name_en}
                             </p>
-                            <div className="flex mt-14 max-lg:place-content-center max-lg:gap-x-4">
-                                <div className="w-[6rem] h-[6rem] max-lg:w-auto">
-                                    <img src="/image/htmlpic.png" />
-                                </div>
-                                <div className="w-[6rem] h-[6rem] max-lg:w-auto">
-                                    <img src="/image/htmlpic.png" />
-                                </div>
+                            <div className="flex flex-wrap mt-5 gap-4">
+                             {splitAndFormartTrim(student.project_stack_1).map((item,i)=>{
+                                return (<div key={i} className="bg-[#E3E3E3] rounded-full px-4">#{item}</div>)
+                             })}
                             </div>
                         </div>
                     </div>
@@ -89,8 +89,7 @@ export default function Creator({projects,student}) {
                                 Shop Management
                             </p>
                             <p className="text-[1.5rem] font-extralight">
-                                จัดการร้านค้า สามารถเพิ่มลบหรือแก้ไข
-                                สินค้าและโปรโมชันในร้านได้
+                                {student.project_func_1}
                             </p>
                         </div>
                         <div className="basis-1/3 max-lg:text-right">
@@ -101,8 +100,7 @@ export default function Creator({projects,student}) {
                                 Shop Management
                             </p>
                             <p className="text-[1.5rem] font-extralight">
-                                จัดการร้านค้า สามารถเพิ่มลบหรือแก้ไข
-                                สินค้าและโปรโมชันในร้านได้
+                            {student.project_func_2}
                             </p>
                         </div>
                         <div className="basis-1/3">
@@ -113,8 +111,7 @@ export default function Creator({projects,student}) {
                                 Shop Management
                             </p>
                             <p className="text-[1.5rem] font-extralight">
-                                จัดการร้านค้า สามารถเพิ่มลบหรือแก้ไข
-                                สินค้าและโปรโมชันในร้านได้
+                            {student.project_func_3}
                             </p>
                         </div>
                     </div>
@@ -125,7 +122,7 @@ export default function Creator({projects,student}) {
                         </div>
                         <div className="grow-0">
                             <p className="uppercase text-[2.25rem] text-center max-sm:text-[1rem]">
-                                advisor — KACHORNPON Hiranchotepaisan
+                                advisor — {student.project_advisor}
                             </p>
                         </div>
                         <div className="grow">
@@ -138,15 +135,16 @@ export default function Creator({projects,student}) {
                         Video
                     </p>
                     <div className="aspect-video bg-black mx-auto rounded-md ">
-                        <iframe
+                        {student.url_showreel?<iframe
                             width="100%"
                             height="100%"
-                            src="https://www.youtube.com/embed/xOAGH2gbhOA"
+                            src={convertToEmbeddedUrl(student.url_showreel)}
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
-                        ></iframe>
+                        ></iframe>:null}
+                        
                     </div>
                     <div className="mx-auto">
                         <div className="flex h-full mt-9 max-sm:flex-col">
@@ -157,7 +155,7 @@ export default function Creator({projects,student}) {
                             </div>
                             <div className="w-1/2 max-sm:w-full">
                                 <p className="text-right ml-auto text-[2.5rem] font-bold capitalize max-sm:hidden max-sm:text-[0rem]">
-                                    Thanatron (2023)
+                                    {student.full_name_en} (2023)
                                 </p>
                             </div>
                         </div>
@@ -166,26 +164,29 @@ export default function Creator({projects,student}) {
                         <div className="flex gap-14 h-full mt-[5.25rem] max-sm:flex-col">
                             <div className="w-1/2 max-sm:w-full max-lg:text-center">
                                 <div className="aspect-video bg-black mx-auto rounded-md">
-                                    <iframe
+                                    {
+                                        student.url_demo?<iframe
                                         width="100%"
                                         height="100%"
-                                        src="https://www.youtube.com/embed/2jSVlBNpE_U"
+                                        src={convertToEmbeddedUrl(student.url_demo)}
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowFullScreen
-                                    ></iframe>
+                                    ></iframe>:null
+                                    }
                                 </div>
                                 <p className="text-[2.5rem] font-bold capitalize mt-10 max-sm:text-[1.5rem]">
                                     Demo
                                 </p>
+                                
                             </div>
                             <div className="w-1/2 max-sm:w-full max-sm:text-center">
                                 <div className="aspect-video bg-black mx-auto rounded-md">
                                     <iframe
                                         width="100%"
                                         height="100%"
-                                        src="https://www.youtube.com/embed/Z0QModZv_C8"
+                                        src={convertToEmbeddedUrl(student.url_interview)}
                                         title="YouTube video player"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -201,9 +202,9 @@ export default function Creator({projects,student}) {
                         <div className="w-full h-[0.0625rem] bg-black mx-auto mt-[5.12rem]"></div>
                     </div>
 
-                    <AboutMe data={{}} />
+                    <AboutMe student={student} />
                 </div>
-                <OtherProject data={{}} />
+                <OtherProject projects={projects} ziggy={ziggy}/>
                 {/* footer */}
             </MainLayout>
         </>

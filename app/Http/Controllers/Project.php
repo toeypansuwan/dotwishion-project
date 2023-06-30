@@ -39,7 +39,7 @@ class Project extends Controller
     {
         //
         $student = Students::where('student_id', $id)->first();
-        $projects = Students::where('student_id', '!=', $id)->inRandomOrder()->select('id', 'student_id', 'full_name_en', 'project_nickname_en', 'img_projecticon', 'img_projectpng')->get();
+        $projects = Students::where('student_id', '!=', $id)->inRandomOrder()->select('id', 'student_id', 'img_aboutme', 'full_name_en', 'project_nickname_en', 'img_projecticon', 'img_projectpng')->get();
         return Inertia::render('Creator', compact('student', 'projects'));
     }
 
